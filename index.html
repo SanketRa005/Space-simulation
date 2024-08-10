@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Architect: Build Your Own Solar System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stellar Architect</h1>
+        <p>Create and explore your own solar system</p>
+        <div id="controls">
+            <div class="control-group">
+                <label for="star-type">Choose Star Type:</label>
+                <select id="star-type">
+                    <option value="yellow">Yellow Star</option>
+                    <option value="red">Red Dwarf</option>
+                    <option value="blue">Blue Giant</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <h3>Add a Planet:</h3>
+                <label for="planet-name">Planet Name:</label>
+                <input type="text" id="planet-name" placeholder="Enter name">
+
+                <label for="planet-type">Planet Type:</label>
+                <select id="planet-type">
+                    <option value="rocky">Rocky</option>
+                    <option value="gas">Gas Giant</option>
+                    <option value="icy">Icy</option>
+                </select>
+
+                <label for="planet-size">Size:</label>
+                <input type="range" id="planet-size" min="10" max="50" value="20">
+                
+                <label for="planet-distance">Distance from Star:</label>
+                <input type="range" id="planet-distance" min="50" max="250" value="100">
+                
+                <label for="planet-speed">Orbital Speed:</label>
+                <input type="range" id="planet-speed" min="1" max="10" value="5">
+                
+                <button id="add-planet">Add Planet</button>
+            </div>
+        </div>
+        <div id="solar-system">
+            <!-- Star and planets will be rendered here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
